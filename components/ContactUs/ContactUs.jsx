@@ -30,7 +30,7 @@ const ContactUs = () => {
             </p>
             <div className="space-y-3">
               <h3 className="text-xl font-semibold">India</h3>
-              <p>India, Bangalore 75102423</p>
+              <p>India, Bangalore 7510242323</p>
               <p>Email: <a href="mailto:info@vdigtech.com" className="text-blue-500">info@test</a></p>
               <p>Phone: <a href="tel:+917008166042" className="text-blue-500">+91 99393939999</a></p>
             </div>
