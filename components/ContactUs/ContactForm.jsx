@@ -80,7 +80,7 @@ const ContactForm = ({ onChange, onSubmit }) => {
           type="submit"
           className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-lg transition duration-200"
         >
-          Connect With Undual Analytics Private Limited Today
+          Connect With Undual Today
         </button>
       </form>
     </div>
