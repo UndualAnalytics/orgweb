@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { Menu, X,ChevronDown } from 'lucide-react';
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
 
   //services sublinks
   const services = [
-    { name: 'Website Development', href: '/services/web-development' },
+    { name: 'Website Development', href: '/services/website-development' },
     { name: 'App Development', href: '/services/app-development' },
   ];
 
@@ -139,10 +139,10 @@ const Navbar = () => {
           
           </div>
 
-          <Button className="bg-primaryColor hidden lg:block hover:bg-white text-black">
+           {/* <Button className="bg-primaryColor hidden lg:block hover:bg-white text-black">
               Let's Talk
               <span className="ml-2">↑</span>
-            </Button>
+            </Button> */}
 
           {/* Mobile menu button */}
           <div className="md:hidden">

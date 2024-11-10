@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight,ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 const ServiceCard = ({ title, icon, image, isHighlighted = false }) => {
   return (
@@ -31,9 +32,11 @@ const ServiceCard = ({ title, icon, image, isHighlighted = false }) => {
 
       {/* Image */}
       <div className="h-28 mt-4 p-2 relative">
-        <img
+        <Image
           src={image}
           alt={title}
+          width={200}
+          height={200}
           className="w-full h-full object-cover grayscale"
         />
         <div className="absolute inset-0 " />
@@ -97,16 +100,16 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className="bg-black pb-10">
+    <div className="bg-black py-10">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
-        <div className="mt-16 flex items-center justify-center gap-3 text-primaryColor">
+        <div className=" flex items-center justify-center gap-3 text-primaryColor">
             <ArrowRight className="w-5 h-5" />
             <span className="text-sm font-medium hover:text-primaryColor cursor-pointer transition-colors">
               All Services
             </span>
           </div>
-          <h2 className="text-5xl font-bold text-white mb-6">
+          <h2 className="primary-heading font-bold text-white mb-6">
             Our Services
           </h2>
           <p className="text-xl text-gray-400 leading-relaxed">
@@ -126,6 +129,7 @@ const ServicesSection = () => {
           ))}
         </div>
       </div>
+      
     </div>
   );
 };

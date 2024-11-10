@@ -3,9 +3,9 @@ import { ArrowRight } from 'lucide-react';
 
 const AboutCompany = () => {
   return (
-    <div className="bg-black text-white py-20">
+    <div className="bg-black text-white md:py-20 py-10">
       <div className="">
-        <div className="grid lg:grid-cols-3 gap-16 items-center max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-3 gap-16 items-center  max-w-7xl mx-auto">
           {/* Logo Section */}
           <div className="relative">
             <div className="relative w-40 h-40 mx-auto">
@@ -53,7 +53,7 @@ const AboutCompany = () => {
               <span className="text-primaryColor text-sm font-medium">About Company</span>
             </div>
 
-            <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
+            <h2 className="primary-heading font-bold leading-tight">
               Our Main Goal to Satisfied Local & Global Clients
             </h2>
 
@@ -70,7 +70,7 @@ const AboutCompany = () => {
       </div>
 
 
-      <h2 className='text-[8rem]'>WEB DESIGN <br/>AGENCY</h2>
+      <h2 className='main-heading'>WEB DESIGN <br/>AGENCY</h2>
     </div>
   );
 };
