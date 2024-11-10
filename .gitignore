@@ -1,38 +1,39 @@
-# Node modules
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Dependency directories
 node_modules/
 
-# Next.js build output
+# Build output
 .next/
 out/
 
-# Tailwind CSS build artifacts
-public/css/
-public/css/*.css
+# Testing
+coverage/
 
-# Local environment variables
+# Environment variables
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Lock files (yarn or npm)
-yarn.lock
-package-lock.json
-pnpm-lock.yaml
+# Next.js static files
+public/static/
 
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# OS generated files
+# Editor-specific files
+.vscode/
+.idea/
 .DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System files
 Thumbs.db
-
-# Vercel build output
-.vercel/
-
-# Shaadcn specific (adjust if any assets or generated files exist)
-public/shadcn-assets/

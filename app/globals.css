@@ -71,6 +71,18 @@ body {
   }
 }
 
+.yellow-hover {
+  transition: box-shadow 0.4s ease-in-out; /* Adjust duration as needed */
+}
+
+.yellow-hover:hover {
+  box-shadow: 
+    0 0 10px #FBD288, 
+    0 0 20px #FBD288, 
+    0 0 30px #FBD288, 
+    0 0 40px #FBD288, 
+    0 0 50px #FBD288;
+}
 
 
 /* ---------------custom css --------------------*/
