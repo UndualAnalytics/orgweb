@@ -7,34 +7,33 @@ export default function AboutUs() {
       {/* Left Side - Text Content */}
       <div className="w-full md:w-1/2 lg:pr-12 space-y-6 md:space-y-8">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-          Establish Your Business's Online Presence
+          Enhance Your Business's With Data & AI-Driven Insights
           <span role="img" aria-label="medal" className="ml-2">🏅</span>
         </h2>
         <p className="text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed">
-          Boost your business's online impact with advanced digital marketing integration.
-          Showcase your strength online to achieve success in the digital space.
+          Unlock new growth opportunities with data-driven Insightsand AI-RPA provides you with intelligent solutionsthat optimize decision-making and streamline operations.
         </p>
         <div className="space-y-3 text-sm md:text-base lg:text-lg font-medium">
           <div className="flex items-center space-x-2">
             <CheckCircle className="text-green-500 w-5 h-5" />
-            <p>White-Hat SEO Technique</p>
+            <p>Custom Software Development</p>
           </div>
           <div className="flex items-center space-x-2">
             <CheckCircle className="text-green-500 w-5 h-5" />
-            <p>Organic Content Strategy</p>
+            <p>Predictive Data modeling</p>
           </div>
           <div className="flex items-center space-x-2">
             <CheckCircle className="text-green-500 w-5 h-5" />
-            <p>Analytics and Market Research</p>
+            <p>AI and Machine Learning Application</p>
           </div>
-          <div className="flex items-center space-x-2">
+          {/* <div className="flex items-center space-x-2">
             <CheckCircle className="text-green-500 w-5 h-5" />
             <p>Social Media Marketing & Advertisement</p>
           </div>
           <div className="flex items-center space-x-2">
             <CheckCircle className="text-green-500 w-5 h-5" />
             <p>Real-Time Reports</p>
-          </div>
+          </div> */}
         </div>
       </div>
 
