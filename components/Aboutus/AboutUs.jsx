@@ -2,11 +2,16 @@
 import React from 'react';
 import Trusted from './Trusted';
 import Establish from './Establish';
+import FeaturesSection from '../services/Banner';
+import StatsSection from '../home/Stats';
 
 const AtUndual = () => {
   return (
-    <div className="bg-black text-white min-h-screen p-6 md:p-16">
+    <div className="bg-black text-white ">
       {/* Section 1: Introduction */}
+      <div className='min-h-screen p-6 md:p-16'>
+
+      
       <div>
         {/* Left side heading */}
         <div style={{ display: 'flex', flexDirection: 'column', rowGap: '1rem', justifyContent: 'center', alignItems: 'center' }}>
@@ -67,6 +72,12 @@ const AtUndual = () => {
 
       {/* Additional Sections */}
       <Trusted />
+      </div>
+      <FeaturesSection />
+      <div className='pt-6'>
+      <StatsSection />
+      </div>
+      
       <Establish />
     </div>
   );
