@@ -1,35 +1,39 @@
 "use client"
-import React, { useState } from 'react';
-import { Menu, X,ChevronDown } from 'lucide-react';
-// import { Button } from "@/components/ui/button";
+import React, { useState, useRef, useEffect } from 'react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 const Navbar = () => {
-
-  const [isOpen, setIsOpen] = useState(false); //for opening side navbar in mobile view
+  const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-  const [activeDropdown, setActiveDropdown] = useState(null);  //for nav-links with sublinks
-  const [mobileActiveSection, setMobileActiveSection] = useState(''); //for dropdown in mobile view
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [mobileActiveSection, setMobileActiveSection] = useState('');
+  const dropdownTimeoutRef = useRef(null);
+  const dropdownRefs = useRef({});
 
-  //services sublinks
   const services = [
     { name: 'Website Development', href: '/services/website-development' },
-    { name: 'App Development', href: '/services/app-development' },
+    // { name: 'App Development', href: '/services/app-development' },
   ];
 
-  //products sublinks
   const products = [
     { name: 'Product 1', href: '/products/1' },
     { name: 'Product 2', href: '/products/2' },
   ];
 
-  //this is for getting which link we are on so that we can highlight
   const isActiveLink = (path) => pathname === path;
-
-  //this is for the sublink selection
   const isActiveSection = (paths) => paths.some(path => pathname.startsWith(path));
 
-  // Custom link component with hover and active states (this is for normal links and for sublinks there is DropDownLink Component)
+  // Clear timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (dropdownTimeoutRef.current) {
+        clearTimeout(dropdownTimeoutRef.current);
+      }
+    };
+  }, []);
+
   const NavLink = ({ href, children, isActive }) => (
     <a
       href={href}
@@ -46,20 +50,36 @@ const Navbar = () => {
     </a>
   );
 
-  // Dropdown link component
   const DropdownLink = ({ label, items, section }) => {
     const isActive = isActiveSection([`/${section}`]);
 
+    const handleMouseEnter = () => {
+      if (dropdownTimeoutRef.current) {
+        clearTimeout(dropdownTimeoutRef.current);
+      }
+      setActiveDropdown(section);
+    };
+
+    const handleMouseLeave = (e) => {
+      // Check if we're not moving to the dropdown content
+      const dropdownContent = dropdownRefs.current[section];
+      const relatedTarget = e.relatedTarget;
+      
+      if (dropdownContent && !dropdownContent.contains(relatedTarget)) {
+        dropdownTimeoutRef.current = setTimeout(() => {
+          setActiveDropdown(null);
+        }, 100);
+      }
+    };
+
     return (
-      <div
-        className="relative group"
-        onMouseEnter={() => setActiveDropdown(section)}
-        onMouseLeave={() => setActiveDropdown(null)}
-      >
+      <div className="relative group">
         <button
           className={`flex items-center relative ${
             isActive || activeDropdown === section ? 'text-primaryColor' : 'text-white hover:text-primaryColor'
           }`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           {label}
           <span
@@ -70,9 +90,16 @@ const Navbar = () => {
         </button>
         
         <div
+          ref={el => dropdownRefs.current[section] = el}
           className={`absolute left-0 mt-2 w-48 z-50 bg-white rounded-md overflow-hidden transition-all duration-300 ${
             activeDropdown === section ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
           }`}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={() => {
+            dropdownTimeoutRef.current = setTimeout(() => {
+              setActiveDropdown(null);
+            }, 100);
+          }}
         >
           {items.map((item) => (
             <a
@@ -91,8 +118,7 @@ const Navbar = () => {
       </div>
     );
   };
-  
- // this is for opening navlinks with sublinks in mobile view
+
   const toggleMobileSection = (section) => {
     setMobileActiveSection(mobileActiveSection === section ? '' : section);
   };
@@ -101,8 +127,7 @@ const Navbar = () => {
     <nav className="bg-black py-3 text-white">
       <div className="custom-container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0  flex items-center">
+          <div className="flex-shrink-0 flex items-center">
             <a href="/" className="text-2xl font-bold">
               <span className="text-white">✓</span>
               <span className="text-white">DIGTECH</span>
@@ -110,8 +135,7 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden text-lg font-semibold  md:flex items-center space-x-16">
+          <div className="hidden text-lg font-semibold md:flex items-center space-x-16">
             <NavLink href="/" isActive={isActiveLink('/')}>
               Home
             </NavLink>
@@ -126,25 +150,24 @@ const Navbar = () => {
               section="services" 
             />
 
-            <DropdownLink 
+            {/* <DropdownLink 
               label="Products" 
               items={products} 
               section="products" 
-            />
+            /> */}
 
             <NavLink href="/contact" isActive={isActiveLink('/contact')}>
               Contact Us
             </NavLink>
-            
-          
           </div>
 
-           {/* <Button className="bg-primaryColor hidden lg:block hover:bg-white text-black">
+      <Link href='/contact'>
+      <button className="bg-primaryColor hidden lg:block py-3 px-5 hover:bg-white text-black">
               Let's Talk
               <span className="ml-2">↑</span>
-            </Button> */}
+            </button>
 
-          {/* Mobile menu button */}
+      </Link>
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -155,6 +178,7 @@ const Navbar = () => {
           </div>
         </div>
 
+        {/* Mobile menu code remains the same */}
         <div 
           className={`fixed top-0 left-0 h-full w-64 bg-black transform transition-transform duration-300 ease-in-out ${
             isOpen ? 'translate-x-0' : '-translate-x-full'
@@ -261,7 +285,6 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Overlay */}
         {isOpen && (
           <div 
             className="fixed inset-0 bg-black bg-opacity-50 md:hidden z-40"

@@ -6,6 +6,8 @@ import React from 'react'
 import FeaturesSection from '../../../components/services/Banner'
 import ServiceSection from '../../../components/services/ServiceSection'
 import CTASection from '../../../components/services/CTASection'
+import HeroSection from '../../../components/services/Hero'
+import ContactUs from '../../../components/ContactUs/ContactUs'
 
 const page = () => {
   const websiteDesignData = {
@@ -48,6 +50,8 @@ const page = () => {
   return (
     <div className='bg-black'>
       <div className='custom-container'>
+        <HeroSection />
+     
       <ServicesSection />
         <HowItWorks />
         <WhatWeDo />

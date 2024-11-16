@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import Link from 'next/link';
 
 const CTASection = () => {
   return (
@@ -30,6 +31,7 @@ const CTASection = () => {
         </div>
 
         {/* Circular Button */}
+        <Link href="/contact">
         <button className="group relative w-40 h-40 rounded-full bg-primaryColor transition-colors duration-300">
           <div className="absolute inset-0 flex flex-col items-center justify-center text-black">
             <ArrowUpRight className="w-6 h-6 mb-2 transform group-hover:translate-y-[-2px] group-hover:translate-x-[2px] transition-transform" />
@@ -37,6 +39,7 @@ const CTASection = () => {
             <span className="text-sm font-medium">With Us</span>
           </div>
         </button>
+        </Link>
       </div>
     </section>
   );
