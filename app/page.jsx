@@ -6,6 +6,10 @@ import StatsSection from "@/components/home/Stats";
 import TestimonialSlider from "@/components/home/Testionials";
 import BusinessPresence from "@/components/home/WhyChooseUs";
 import Image from "next/image";
+import ContactUs from "../components/ContactUs/ContactUs";
+import ContactForm from "../components/ContactUs/ContactForm";
+
+import Contact from "../components/home/Contact";
 
 export default function Home() {
   return (
@@ -21,11 +25,11 @@ export default function Home() {
      <ProjectGallery />
      <BusinessPresence />
      <TestimonialSlider />
-    
+ 
       </div>
      
-     </div>
-    
+     </div> 
+     <Contact />
     </div>
   );
 }

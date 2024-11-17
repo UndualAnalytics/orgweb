@@ -117,7 +117,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center space-x-8 gap-y-8 max-w-7xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-x-8 gap-y-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <ServiceCard
               key={service.title}

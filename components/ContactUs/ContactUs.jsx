@@ -1,4 +1,4 @@
-'use client';
+
 import React from 'react';
 import ContactForm from './ContactForm';
 import { Phone, Mail, MapPin } from 'lucide-react'; // Importing the necessary icons
