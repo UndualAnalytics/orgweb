@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -129,9 +130,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
             <a href="/" className="text-2xl font-bold">
-              <span className="text-white">✓</span>
-              <span className="text-white">DIGTECH</span>
-              <span className="text-[#FBD288]">.COM</span>
+             <Image src="/logo.png" alt='logo' width={250} height={250}/>
             </a>
           </div>
 
@@ -187,19 +186,11 @@ const Navbar = () => {
           {/* Logo Section */}
           <div className="p-4 border-b border-gray-900">
             <a href="/" className="text-xl font-bold">
-              <span className="text-white">✓</span>
-              <span className="text-white">DIGTECH</span>
-              <span className="text-emerald-400">.COM</span>
+            <Image src="/logo.png" alt='logo' width={250} height={250}/>
             </a>
           </div>
 
-          {/* Close button */}
-          <button
-            onClick={() => setIsOpen(false)}
-            className="absolute top-4 right-4 text-white hover:text-primaryColor"
-          >
-            <X size={20} />
-          </button>
+        
 
           {/* Navigation Links */}
           <div className="py-4">

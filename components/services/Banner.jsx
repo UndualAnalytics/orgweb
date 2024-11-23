@@ -2,10 +2,10 @@ import React from 'react';
 
 const FeaturesSection = () => {
   const features = [
-    { title: 'Creative People' },
-    { title: 'Good Reviews' },
-    { title: 'Awesome Design' },
-    { title: 'Fast Delivery' }
+    { title: 'Creative Solutions' },
+    { title: 'Cutting-edge Technology' },
+    { title: 'Experienced Team' },
+    { title: 'Client-focused Approach' }
   ];
 
   return (

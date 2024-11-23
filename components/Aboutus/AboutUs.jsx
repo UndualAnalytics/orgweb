@@ -62,7 +62,7 @@ const AtUndual = () => {
         {/* Right side description */}
         <div className="text-center md:text-left md:max-w-md">
           <h2 className="text-4xl font-bold">
-            Transforming businesses with Data-Driven Innovation<span role="img" aria-label="rock-on">🤘</span>
+          Transforming Businesses with Data-Driven Innovation<span role="img" aria-label="rock-on">🤘</span>
           </h2>
           <p className="mt-4 text-gray-400 text-lg">
             Welcome to <span className="font-bold text-white">Undual Analytics </span>. At Undual Analytics, we are a forward-thinking technology company dedicated to empowering businesses through advanced software solutions, data analytics, and artificial intelligence (AI). We provide end-to-end services.

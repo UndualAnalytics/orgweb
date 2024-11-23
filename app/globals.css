@@ -104,6 +104,10 @@ body {
 
 }
 
+.stroke {
+  -webkit-text-stroke: 1px white; /* Adjust stroke width and color */
+  color: transparent; /* Make the fill transparent */
+}
 
 @media screen and (max-width: 1024px) {
   .main-heading{

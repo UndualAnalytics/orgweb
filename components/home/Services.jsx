@@ -48,7 +48,7 @@ const ServiceCard = ({ title, icon, image, isHighlighted = false }) => {
 const ServicesSection = () => {
   const services = [
     {
-      title: 'Website Development',
+      title: 'Custom Software Solutions',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-full h-full">
           <path d="M13 20l6-6-6-6M5 20l6-6-6-6" />
@@ -58,7 +58,7 @@ const ServicesSection = () => {
       highlighted: true
     },
     {
-      title: 'Graphic Design',
+      title: 'App Development',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-full h-full">
           <path d="M13 20l6-6-6-6M5 20l6-6-6-6" />
@@ -68,7 +68,7 @@ const ServicesSection = () => {
     
     },
     {
-      title: 'App Development',
+      title: 'System Integration and Modernization',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-full h-full">
           <rect x="5" y="2" width="14" height="20" rx="2" />
@@ -78,7 +78,7 @@ const ServicesSection = () => {
       image: "/images/home/service-img.jpg",
     },
     {
-      title: 'Digital Marketing',
+      title: 'Web Maintenance',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-full h-full">
           <path d="M12 16v-4M12 8h.01" />
@@ -88,7 +88,17 @@ const ServicesSection = () => {
       image: "/images/home/service-img.jpg",
     },
     {
-      title: 'Website Maintenance',
+      title: 'Data Analytics',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-full h-full">
+          <path d="M12 6V4M12 20v-2M6 12H4m16 0h-2m1.657-6.343l-1.414 1.414M7.757 16.243l-1.414 1.414M7.757 7.757L6.343 6.343m10.9 10.9l-1.414-1.414" />
+          <circle cx="12" cy="12" r="4" />
+        </svg>
+      ),
+      image: "/images/home/service-img.jpg",
+    },
+    {
+      title: 'Artificial Intelligence(AI)',
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-full h-full">
           <path d="M12 6V4M12 20v-2M6 12H4m16 0h-2m1.657-6.343l-1.414 1.414M7.757 16.243l-1.414 1.414M7.757 7.757L6.343 6.343m10.9 10.9l-1.414-1.414" />
