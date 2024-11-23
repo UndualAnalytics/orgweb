@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const ServiceCard = ({ title, icon, image, isHighlighted = false }) => {
   return (
-    <div className={`relative group overflow-hidden  transition-all duration-300 ${
+    <div className={`relative group overflow-hidden w-[300px]  transition-all duration-300 ${
       isHighlighted ? 'bg-primaryColor' : 'bg-gray-900'
     }`}>
       <div className="p-6 space-y-4">
