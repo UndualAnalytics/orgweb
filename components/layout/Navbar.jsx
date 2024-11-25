@@ -15,6 +15,7 @@ const Navbar = () => {
 
   const services = [
     { name: 'Website Development', href: '/services/website-development' },
+    { name: 'AI Model', href: '/services/ai-model' },
     // { name: 'App Development', href: '/services/app-development' },
   ];
 
