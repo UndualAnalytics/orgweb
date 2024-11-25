@@ -34,7 +34,7 @@ const AboutCompany = () => {
                 <div className="w-16 h-16 bg-black border-2 border-gray-800 rounded-full flex items-center justify-center">
                   <svg
                     viewBox="0 0 24 24"
-                    className="w-8 h-8 text-emerald-400"
+                    className="w-8 h-8 text-primaryColor"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth="2"
@@ -54,11 +54,11 @@ const AboutCompany = () => {
             </div>
 
             <h2 className="primary-heading font-bold leading-tight">
-              Our Main Goal to Satisfied Local & Global Clients
+            Empowering Businesses with Data-Driven Transformation
             </h2>
 
             <p className="text-gray-400 text-lg leading-relaxed">
-              At Vdigtech, we understand that your online presence is more than just code and graphics; it's the digital heartbeat of your brand. That's why we specialize in creating custom web solutions tailored to your unique needs.
+            At Undual Analytics, we are a cutting-edge tech firm dedicated to transforming your digital landscape through advanced software solutions, Data Analytics, AI-driven insights, and automation. Our team is passionate about helping organizations leverage data and technology to enhance operational efficiency, increase revenue, and foster innovation.
             </p>
 
             <button className="inline-flex items-center gap-2 text-white hover:text-primaryColor transition-colors group">
@@ -70,7 +70,7 @@ const AboutCompany = () => {
       </div>
 
 
-      <h2 className='main-heading'>WEB DESIGN <br/>AGENCY</h2>
+      <h2 className='main-heading'>SOFTWARE <br/><span className='stroke'>DATA AND AI</span> <br/>SOLUTIONS</h2>
     </div>
   );
 };

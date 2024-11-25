@@ -4,7 +4,7 @@ import { ChevronRight, Gem, Network } from "lucide-react"; // Import icons from 
 const steps = [
   {
     title: "Define Goals and Requirements",
-    description: "At Vdigtech, we understand the purpose of the website, its target audience, and the specific goals it needs to achieve.",
+    description: "At Undual Analytics, we understand the purpose of the website, its target audience, and the specific goals it needs to achieve.",
     icon: <Gem size={32} className="text-black" />,
     bgColor: "bg-primaryColor",
     textColor: "text-black",

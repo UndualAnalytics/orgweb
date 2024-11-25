@@ -100,10 +100,28 @@ body {
 .primary-heading{
   font-size: 3.2rem;
 }
-.secondary-heading{
-
+/* Scrollbar Styling */
+.scrollable-container::-webkit-scrollbar {
+  width: 8px;
 }
 
+.scrollable-container::-webkit-scrollbar-track {
+  background: #2c2c2c; /* Darker track for contrast */
+  border-radius: 4px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background: #888; /* Gray thumb */
+  border-radius: 4px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker gray on hover */
+}
+.stroke {
+  -webkit-text-stroke: 1px white; /* Adjust stroke width and color */
+  color: transparent; /* Make the fill transparent */
+}
 
 @media screen and (max-width: 1024px) {
   .main-heading{
