@@ -7,25 +7,29 @@ const Accordion = () => {
 
     const steps = [
       {
-        title: 'Define Goals and Requirements',
-        description: 'First step in our website development process involves clearly defining your goals and gathering all project requirements.'
+        title: 'Define Objectives and Scope',
+        description: 'Collaborate with clients to understand their goals, challenges, and requirements. Establish a clear project scope to ensure alignment with both short-term and long-term business objectives.'
       },
       {
-        title: 'Research and Planning',
-        description: 'Conduct market research to gather insights about the target audience, competitors, and industry trends. Create a sitemap to outline the structure and hierarchy of the website\'s pages. Consider the user journey and how visitors will navigate through the site.'
+        title: 'Research and Strategy Development',
+        description: 'Conduct comprehensive market research and data analysis to uncover industry trends, audience behavior, and competitor insights. Develop strategic roadmaps for impactful solutions that blend software development, AI, and data analytics.'
       },
       {
-        title: 'User Experience (UX) Design',
-        description: 'We focus on creating intuitive and engaging user experiences that keep your visitors coming back.'
+        title: 'Custom Software and Data-Driven Solution Design',
+        description: 'Design user-centric, scalable software applications that seamlessly integrate data analytics and AI capabilities. Focus on intuitive interfaces and robust functionalities to enhance decision-making and operational efficiency.'
       },
       {
-        title: 'Testing and Optimization',
-        description: 'Rigorous testing and optimization to ensure your website performs flawlessly across all devices and browsers.'
+        title: 'AI-Enhanced Insights',
+        description: 'Leverage artificial intelligence to analyze complex data patterns, enabling predictive insights and automation. Deliver solutions that transform raw data into actionable strategies for improved business performance.'
       },
       {
-        title: 'Launch and Deployment',
-        description: 'Final step involves launching your website and ensuring everything is properly deployed and functioning.'
-      }
+        title: 'Testing, Quality Assurance, Deployment and Launch',
+        description: 'Conduct rigorous testing to ensure optimal performance, reliability, and accuracy in both software and data-driven models. Fine-tune AI algorithms and analytics dashboards for precision and usability. Seamlessly deploy solutions, ensuring smooth integration with existing systems. Provide hands-on support during the launch to address any immediate needs.'
+      },
+      {
+        title: 'Continuous Support and Updates',
+        description: 'Offer ongoing maintenance, updates, and performance optimization for software, AI models, and analytics systems. Ensure solutions remain aligned with evolving business needs and technological advancements. We are committed to delivering innovative, data-powered, and AI-driven solutions that drive growth, efficiency, and success for your business.'
+      },
     ];
   return (
     <div className="space-y-4">

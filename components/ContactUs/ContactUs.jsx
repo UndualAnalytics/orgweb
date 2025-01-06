@@ -37,7 +37,7 @@ const ContactUs = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="mr-2" /> {/* Email Icon */}
-                <p>Email: <a href="mailto:info@vdigtech.com" className="text-blue-500">info@test</a></p>
+                <p>Email: <a href="mailto:info@undual.ai" className="text-blue-500">info@test</a></p>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-2" /> {/* Phone Icon */}

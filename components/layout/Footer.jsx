@@ -10,16 +10,16 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="md:col-span-2 ">
             <h2 className="lg:text-[5rem] md:text-[3rem] text-[1.8rem] font-bold mb-6">
-              Get Ready to<br />
-              Grow Your Business
+              Ready to Transform<br />
+              Your Business?
             </h2>
             <div className="space-y-4 md:text-2xl text-md">
               <div className="inline-block">
                 <a 
-                  href="mailto:info@vdigtech.com" 
+                  href="mailto:info@undual.ai" 
                   className="bg-[#0F1419] block border border-gray-700 text-white px-7 py-6 md:px-10 md:py-8 rounded-full hover:bg-gray-800 transition-colors"
                 >
-                  info@vdigtech.com ↑
+                  info@undual.ai ↑
                 </a>
               </div>
               <div className="inline-block md:ml-4">
@@ -80,7 +80,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div>
-              <p className="text-gray-400">© 2024 Vdigtech. All Rights Reserved.</p>
+              <p className="text-gray-400">© 2024 Undual Analytics. All Rights Reserved.</p>
             </div>
             <div className="flex items-center space-x-6">
               <a href="/privacy" className="text-gray-400 hover:text-white transition-colors">

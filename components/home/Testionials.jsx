@@ -12,7 +12,7 @@ const testimonials = [
     id: 1,
     name: "Akasha Panda",
     role: "MANAGER",
-    content: "The team at Vdigtech was extremely knowledgeable and helpful in guiding me through the entire process. I am very pleased with their result, which helps me to get high compliments regarding my business.",
+    content: "The team at Undual Analytics was extremely knowledgeable and helpful in guiding me through the entire process. I am very pleased with their result, which helps me to get high compliments regarding my business.",
     rating: 5,
     avatar: "/api/placeholder/48/48"
   },

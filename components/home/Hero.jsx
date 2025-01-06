@@ -29,12 +29,12 @@ const HeroSection = () => {
         <div className="custom-container">
           <div className="space-y-8">
             <h1 className=" font-bold  main-heading  leading-tight">
-              <span className="block">BEST</span>
-              <span className="block  text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400 font-light tracking-wider">
-                WEBSITE
+              <span className="block">INTELLIGENCE</span>
+              <span className="block stroke  bg-clip-text  font-light tracking-wider">
+                AND
               </span>
               <span className="block relative z-10">
-                DEVELOPMENT
+                INNOVATION
               </span>
             </h1>
           </div>
