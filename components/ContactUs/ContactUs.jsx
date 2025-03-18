@@ -33,15 +33,15 @@ const ContactUs = () => {
               <h3 className="text-xl font-semibold">India</h3>
               <div className="flex items-center">
                 <MapPin className="mr-2" /> {/* Location Icon */}
-                <p>India, Bangalore 75102423</p>
+                <p>512/10, Outer ring road, Mahadevapura, Bangalore - 560048</p>
               </div>
               <div className="flex items-center">
                 <Mail className="mr-2" /> {/* Email Icon */}
-                <p>Email: <a href="mailto:info@undual.ai" className="text-blue-500">info@test</a></p>
+                <p>Email: <a href="mailto:info@undual.ai" className="text-blue-500">info@undual.ai</a></p>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-2" /> {/* Phone Icon */}
-                <p>Phone: <a href="tel:+917008166042" className="text-blue-500">+91 99393939999</a></p>
+                <p>Phone: <a href="tel:+917008166042" className="text-blue-500">+91 7008166042</a></p>
               </div>
             </div>
           </div>
