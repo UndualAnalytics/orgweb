@@ -39,10 +39,10 @@ const ContactUs = () => {
                 <Mail className="mr-2" /> {/* Email Icon */}
                 <p>Email: <a href="mailto:info@undual.ai" className="text-blue-500">info@undual.ai</a></p>
               </div>
-              <div className="flex items-center">
-                <Phone className="mr-2" /> {/* Phone Icon */}
-                <p>Phone: <a href="tel:+917008166042" className="text-blue-500">+91 7008166042</a></p>
-              </div>
+              {/* <div className="flex items-center">
+                <Phone className="mr-2" /> Phone Icon */}
+                {/* <p>Phone: <a href="tel:+917008166042" className="text-blue-500">+91 7008166042</a></p>
+              </div> */}
             </div>
           </div>
 

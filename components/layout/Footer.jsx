@@ -22,14 +22,14 @@ const Footer = () => {
                   info@undual.ai ↑
                 </a>
               </div>
-              <div className="inline-block md:ml-4">
+              {/* <div className="inline-block md:ml-4">
                 <a 
                   href="tel:+917008166042" 
                   className="bg-[#0F1419] block border border-gray-700 text-white px-7 py-6 md:px-10 md:py-8 rounded-full hover:bg-gray-800 transition-colors"
                 >
                   +91 7008166042 ↑
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -59,16 +59,16 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-6">Services</h3>
             <ul className="space-y-4">
               <li>
-                <a href="/services/web-development" className="hover:text-primaryColor transition-colors">Website Development</a>
+                <a href="/services/website-development" className="hover:text-primaryColor transition-colors">Website Development</a>
               </li>
               <li>
-                <a href="/services/app-development" className="hover:text-primaryColor transition-colors">App Development</a>
+                <a href="/services/ai-model" className="hover:text-primaryColor transition-colors">App Development</a>
               </li>
               <li>
-                <a href="/services/maintenance" className="hover:text-primaryColor transition-colors">Website Maintenance</a>
+                <a href="/services/website-development" className="hover:text-primaryColor transition-colors">Website Maintenance</a>
               </li>
               <li>
-                <a href="/services/digital-marketing" className="hover:text-primaryColor transition-colors">Digital Marketing</a>
+                <a href="/services/website-development" className="hover:text-primaryColor transition-colors">Digital Marketing</a>
               </li>
             </ul>
           </div>
